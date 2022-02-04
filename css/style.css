@@ -7,37 +7,43 @@
 /***utily***/
 .d-flex{
     display:flex;
-
 }
-
+.text-uppercase {
+    text-transform: uppercase;
+  }
 
 .warppers{
-
     height: calc(100vh - 70px);
-   
-    
+
 }
 
 .container{
-    max-width: 1170px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    
-   
-   
+width: 230px;
+background-color: black;
 }
 main{
     flex-grow: 1;
-    background-color: #141922;
-    
+    background-color: #141922;  
 }
 
 .top-bar-main{
     height: 70px;
     background-color:rgba(0, 0, 0, 0.5);
+    
+}
+
+.upgrate{
+    background-color: black;
+    color: #B5B6B8;
+    border: 1px solid;
+    border-radius: 2rem;
+    padding: 0.2rem 1rem;
     position: fixed;
-    z-index: 1;
-    width: 100%;
+    top: 20px;
+    right: 10px;
+
+
+
 }
 footer {
     height: 70px;
