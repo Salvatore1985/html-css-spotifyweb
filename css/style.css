@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-body{
+.color-white{
     color: white;
 }
 /***utily***/
@@ -26,15 +26,22 @@ body{
   .text-capitalize {
     text-transform: capitalize;
   }
-
-.warppers{
-    height: calc(100vh - 70px);
-
+.mt-rem{
+    margin-top: 1.5em;
 }
-
-.d-inline-block{
-    display: inline;
+  
+  .d-inline-block{
+      display: inline;
+    }
+    .text-decoration{
+        text-decoration: none;
 }
+    
+    /******Fine utily ********/
+    .warppers{
+        height: calc(100vh - 70px);
+    
+    }
 
 .container{
 width: 230px;
@@ -82,17 +89,30 @@ footer {
 
 #logo-home ,
 #logo-searche,
-#logo-library{
+#logo-library,
+#create-playlist{
     width: 15%;
-    margin-top: 0.5rem;
+   
 }
 
 #library{
     margin-left: 20px;
+    color: #A3A3A3;
 }
 
 #text-home,
 #text-searche,
-#text-library{
+#text-library,
+#text-playlist{
   margin-left: 0.5rem;
 }
+
+#icons-add{
+    font-size: 3.5rem;
+}
+
+#name-playlist  li{
+    list-style-type: none;
+    padding: 0.5rem;
+}
+
