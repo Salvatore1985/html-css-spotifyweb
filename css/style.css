@@ -4,12 +4,27 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    color: white;
+}
 /***utily***/
 .d-flex{
     display:flex;
 }
+.d-flex-column{
+    flex-direction: column;
+    
+}
+.align-center{
+    align-items: center;
+}
 .text-uppercase {
     text-transform: uppercase;
+  }
+
+  .text-capitalize {
+    text-transform: capitalize;
   }
 
 .warppers{
@@ -46,15 +61,12 @@ main{
     top: 20px;
     right: 10px;
 
-
-
 }
 footer {
     height: 70px;
     background-color: #333;
     padding: .8rem;
   }
-
 
 .position-logo{
     width: 100%;
@@ -64,14 +76,23 @@ footer {
  
 }
 
-.img-logo{
+.img-logo {
     width: 60%;
 }
 
+#logo-home ,
+#logo-searche,
+#logo-library{
+    width: 15%;
+    margin-top: 0.5rem;
+}
 
-.red-2{
-    width: 100%;
-   
-    background-color: rgb(105, 45, 45);
+#library{
+    margin-left: 20px;
+}
 
+#text-home,
+#text-searche,
+#text-library{
+  margin-left: 0.5rem;
 }
