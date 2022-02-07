@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.cdnfonts.com/css/circular-std" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="img/logo-small.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Spotify</title>
+</head>
+
+<body class="color-white">
+    <div class="warppers d-flex">
+        <nav class="container d-flex d-flex-column ">
+            <!-- Posizione logo -->
+            <div class="position-logo d-flex test-bord ">
+                <img id="logo" src="img/logo.svg" alt="">
+            </div>
+            <!-- Posizione libreria in colonna -->
+            <div id="library" class=" text-capitalize  test-bord ">
+                <!-- home -->
+                <ul class=" list-style-type  color-grey ">
+                    <li class="border-left"> <a href="#"><img id="logo-home" src="img/home.svg" alt=""></a><span
+                            class="text-library   pl-8px" id="text-home">home</span>
+                    </li>
+                    <li><a href="#"><img id="logo-searche" src="img/search.svg" alt=""></a><span
+                            class="text-library pl-8px" id="text-searche">cerca</span></li>
+                    <li><a href="#"><img id="logo-library" src="img/libreria.svg" alt=""></a><span
+                            class="text-library pl-8px" id="text-library">la tua libreria</span></li>
+                </ul>
+            </div>
+
+            <h5 class="pl-20px  mt-rem text-uppercase test-bord">playlist</h5>
+
+            <!-- lista playlist -->
+            <div class="  d-flex justify-align-center align-center test-bord mt-rem">
+                <div class="  pl-20px">
+                    <a class="text-decoration" href="">
+                        <div id="add" class="d-flex justify-content-center justify-align-center "><span
+                                id="text-add"><strong>+</strong></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="ml-10px color-grey text-capitalize" id="text-playlist"><span>crea playlist</span>
+                </div>
+            </div>
+            <div id="playlist" class=" text-capitalize color-grey  test-bord">
+                <!--items lista playlist -->
+                <div class="name-playlist  pl-20px ">
+                    <ul id="" class="">
+                        <li><a href="#">1nome playlist</a></li>
+                        <li><a href="#">nome playlist</a></li>
+                        <li><a href="#">nome playlist</a></li>
+                        <li><a href="#">nome playlist</a></li>
+                        <li><a href="#">nome playlist</a></li>
+                        <!--          <li><a href="#">nome playlist</a></li>
+                        <li><a href="#">nome playlist</a></li>
+                        <li><a href="#">nome playlist</a></li>
+                        <li><a href="#">nome playlist</a></li>
+                        <li><a href="#">nome playlist</a></li>
+                        <li><a href="#">nome playlist</a></li>
+                        <li><a href="#">nome playlist</a></li>
+                        <li><a href="#">nome playlist</a></li>
+                        <li><a href="#">nome playlist</a></li>
+                        <li><a href="#">nome playlist</a></li>
+                        <li><a href="#">nome playlist</a></li>
+                        <li><a href="#">nome playlist</a></li>
+                        <li><a href="#">nome playlist</a></li>
+                        <li><a href="#">nome playlist</a></li>
+                        <li><a href="#">nome playlist</a></li>
+                        <li><a href="#">nome playlist</a></li>
+                        <li><a href="#">nome playlist</a></li> -->
+                    </ul>
+                </div>
+            </div>
+            <!--  nav-bar autore  -->
+            <div id="nav-bottom" class="  color-grey text-capitalize test-bord">
+                <ul class="pl-20px">
+                    <li id="icon-app" class="">
+                        <a href="#"><i class="fas fa-arrow-circle-down color-grey "></i></a>
+                        <span id="instal-app" class="pl-10px">installa app</span>
+                    </li>
+                    <li id="icon-author" class="">
+                        <a href="#"> <img class="" id="logo-profile" src="img/profile.svg" alt=""></a>
+                        <span class="pl-10px">john doe</span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- main -->
+        <main>
+            <div class="top-bar-main  ">
+                <button id="button-upgrate " class="text-uppercase  upgrate">effetua l'upgrate</button>
+            </div>
+            <section class="gallery">
+                <!-- pagine -->
+                <div id="page" class="test-bord ">
+                    <ul class="text-uppercase color-grey d-flex justify-content-center flex-grap">
+                        <li class="active"><a href="#">in evidenza</a></li>
+                        <li><a href="#">podcast</a></li>
+                        <li><a href="#">classifiche</a></li>
+                        <li><a href="#">generi e mood</a></li>
+                        <li><a href="#">nuove uscite</a></li>
+                        <li><a href="#">scopri</a></li>
+                    </ul>
+                </div>
+                <!-- copertine artisti-->
+                <h2 id="recently-text">Recently played</h2>
+                <section id="cover-container" class="d-flex d-gap-10x">
+                    <div class="cover-album-generic test-bord">
+                        <div class="cover"><img class="cover-album" src="img/metal_lifting.jpg" alt=""></div>
+                        <h4 class="">heavy metal</h4>
+                        <p class="color-grey pt-pb">subtitle</p>
+                    </div>
+                    <div class="cover-album-generic test-bord">
+                        <div class="cover"><img class="cover-album" src="img/stranger.jpeg" alt=""></div>
+                        <h4 class="">stranger thing, vol.1(a netflix original series soundtrack)</h4>
+                        <p class="color-grey pt-pb">kyle dixon & michael stein</p>
+                    </div>
+                    <div class="cover-album-generic test-bord">
+                        <div class="cover"><img class="cover-album" src="img/aquietplace.jpeg" alt=""></div>
+                        <h4 class="">a quiet place</h4>
+                        <p class="color-grey pt-pb">subtitle</p>
+                    </div>
+                    <div class="cover-album-generic test-bord">
+                        <div class="cover"><img class="cover-album" src="img/split.jpeg" alt=""></div>
+                        <h4 class="">split</h4>
+                        <p class="color-grey pt-pb">subtitle</p>
+                    </div>
+                    <div class="cover-album-generic test-bord">
+                        <div class="cover"><img class="cover-album" src="img/cure.jpeg" alt=""></div>
+                        <h4 class="">a cure for wellness</h4>
+                        <p class="color-grey pt-pb">subtitle</p>
+                    </div>
+                    <div class="cover-album-generic test-bord">
+                        <div class="cover"><img class="cover-album" src="img/sinister.jpeg" alt=""></div>
+                        <h4 class="">sinister</h4>
+                        <p class="color-grey pt-pb">subtitle</p>
+                    </div>
+                </section>
+                <!-- Creato per autore -->
+                <h2 id="recently-text">Creato per john Doe</h2>
+                <p class="color-grey pt-pb">Più ascolti. più</p>
+                <section id="created-by-author" class="d-flex d-gap-10x">
+                    <div class="cover-album-generic test-bord">
+                        <div class="cover"><img class="cover-album" src="img/metal_lifting.jpg" alt=""></div>
+                        <h4 class="">heavy metal</h4>
+                    </div>
+                    <div class="cover-album-generic test-bord">
+                        <div class="cover"><img class="cover-album" src="img/stranger.jpeg" alt=""></div>
+                        <h4 class="">stranger thing, vol.1(a netflix original series soundtrack)</h4>
+
+                    </div>
+                    <div class="cover-album-generic test-bord">
+                        <div class="cover"><img class="cover-album" src="img/aquietplace.jpeg" alt=""></div>
+                        <h4 class="">a quiet place</h4>
+
+                    </div>
+                    <div class="cover-album-generic test-bord">
+                        <div class="cover"><img class="cover-album" src="img/split.jpeg" alt=""></div>
+                        <h4 class="">split</h4>
+
+                    </div>
+                    <div class="cover-album-generic test-bord">
+                        <div class="cover"><img class="cover-album" src="img/cure.jpeg" alt=""></div>
+                        <h4 class="">a cure for wellness</h4>
+
+                    </div>
+                    <div class="cover-album-generic test-bord">
+                        <div class="cover"><img class="cover-album" src="img/sinister.jpeg" alt=""></div>
+                        <h4 class="">sinister</h4>
+
+                    </div>
+                </section>
+            </section>
+        </main>
+    </div>
+    <!-- footer -->
+    <footer id="" class="d-flex justify-content ">
+        <div class="footer-left d-flex justify-content-around ">
+            <div class="d-flex  justify-content ">
+                <!--copertina small -->
+                <div class="d-flex align-center ">
+                    <img id="sinister-small-cover" src="img/sinister.jpeg" alt="">
+                    <!-- nome album -->
+                    <div class="pl-10px text-capitalize ">
+                        <span class=" " id="name-author ">sinister</span>
+                        <span class="d-block  color-grey" id="name-piece">sinister</span>
+                    </div>
+                </div>
+                <div></div>
+            </div>
+            <!-- icon-cuore e cartella -->
+            <div class=" d-flex align-center color-grey ">
+                <i class="far fa-heart pl-10px"></i>
+                <i class="far fa-folder pl-10px"></i>
+            </div>
+        </div>
+        <div class="footer-center  d-flex d-flex-column   align-center">
+            <div id="icons-controls">
+                <i class="fas fa-random"></i>
+                <i class="fas fa-caret-left"></i>
+                <i class="far fa-play-circle"></i>
+                <i class="fas fa-caret-right"></i>
+                <i class="fas fa-redo-alt"></i>
+            </div>
+            <div id="icons-time">
+                <span>0:25</span>
+                <!--  <span id="time-play" class="d-inline"></span> -->
+                <div id="time-play" class="d-inline"></div>
+                <span>4;:35</span>
+            </div>
+            <div></div>
+        </div>
+        <div class="footer-right class3"></div>
+    </footer>
+</body>
+
+</html>
