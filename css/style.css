@@ -7,10 +7,10 @@
 
 
 /***utily***/
-.test-bord{
+/* .test-bord{
     border: 1px solid white;
 }
-
+ */
 .ghost{
     width: 1px;
 }
@@ -68,7 +68,9 @@
   .text-capitalize {
     text-transform: capitalize;
   }
-
+.pd-text{
+    padding: 1.5rem;
+}
   .pl-20px{
       padding-left: 20px;
   }
@@ -116,6 +118,9 @@
 main{
     flex-grow: 1;
     background-color: #141922;  
+    height: calc(100vh - 70px);
+    overflow: auto;
+
 }
 .top-bar-main{
     height: 70px;
@@ -290,14 +295,18 @@ width: 15%;
    
 }
 
-#cover-container{
+.cover-container{
     padding: 1.5rem;
-    border: 1px solid white;
+  /*   border: 1px solid white; */
 }
 .cover-album-generic{
     width: calc(100% / 6);
     
 }
+/* #created-by-author .cover-album-generic{
+    width: calc(100% / 2);
+    
+} */
 
 div img {
   width: 150px;
@@ -316,9 +325,11 @@ div img {
     font-size: .8rem;
 }
 
-#recently-text{
+/* #recently-text{
     padding: 1.5rem;
-}
+} */
+
+
   @media screen and (min-width :576px) and (max-width :768px) {
     #playlist  {
      overflow: auto;
