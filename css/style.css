@@ -315,6 +315,7 @@ div img {
 
 .img-circle{
     border-radius: 50%;
+    
 }
 .cover-album-generic .cover-album{
     object-fit: cover;
