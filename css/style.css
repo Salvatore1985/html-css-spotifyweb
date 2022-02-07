@@ -35,6 +35,9 @@
 .d-flex{
     display:flex;
 }
+.d-gap-10x{
+    gap: 1%;
+}
 .d-flex-column{
     flex-direction: column;
 }
