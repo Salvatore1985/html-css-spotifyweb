@@ -16,13 +16,13 @@
 
 <body class="color-white">
     <div class="warppers d-flex">
-        <nav class="container ">
+        <nav class="container d-flex d-flex-column ">
             <!-- Posizione logo -->
-            <div class="position-logo d-flex ">
+            <div class="position-logo d-flex test-bord ">
                 <img id="logo" src="img/logo.svg" alt="">
             </div>
             <!-- Posizione libreria in colonna -->
-            <div id="library" class="d-flex-column text-capitalize mb-rem  ">
+            <div id="library" class=" text-capitalize  test-bord ">
                 <!-- home -->
                 <ul class=" list-style-type  color-grey ">
                     <li class="border-left"> <a href="#"><img id="logo-home" src="img/home.svg" alt=""></a><span
@@ -35,11 +35,11 @@
                 </ul>
             </div>
 
-            <h5 class="pl-20px text-uppercase mb-rem">playlist</h5>
+            <h5 class="pl-20px  mt-rem text-uppercase test-bord">playlist</h5>
 
             <!-- lista playlist -->
-            <div class=" mb-rem pl-20px d-flex justify-align-center align-center ">
-                <div class=" ">
+            <div class="  d-flex justify-align-center align-center test-bord mt-rem">
+                <div class="  pl-20px">
                     <a class="text-decoration" href="">
                         <div id="add" class="d-flex justify-content-center justify-align-center "><span
                                 id="text-add"><strong>+</strong></span>
@@ -49,9 +49,9 @@
                 <div class="ml-10px color-grey text-capitalize" id="text-playlist"><span>crea playlist</span>
                 </div>
             </div>
-            <div id="playlist" class=" pl-20px text-capitalize color-grey ">
+            <div id="playlist" class=" text-capitalize color-grey  test-bord">
                 <!--items lista playlist -->
-                <div class="name-playlist ">
+                <div class="name-playlist  pl-20px ">
                     <ul id="" class="">
                         <li><a href="#">1nome playlist</a></li>
                         <li><a href="#">nome playlist</a></li>
@@ -79,8 +79,8 @@
                 </div>
             </div>
             <!--  nav-bar autore  -->
-            <div id="nav-bottom" class=" pl-20px color-grey text-capitalize ">
-                <ul>
+            <div id="nav-bottom" class="  color-grey text-capitalize test-bord">
+                <ul class="pl-20px">
                     <li id="icon-app" class="">
                         <a href="#"><i class="fas fa-arrow-circle-down color-grey "></i></a>
                         <span id="instal-app" class="pl-10px">installa app</span>
@@ -99,7 +99,7 @@
             </div>
             <section class="gallery">
                 <!-- pagine -->
-                <div id="page">
+                <div id="page" class="test-bord ">
                     <ul class="text-uppercase color-grey d-flex justify-content-center flex-grap">
                         <li class="active"><a href="#">in evidenza</a></li>
                         <li><a href="#">podcast</a></li>
@@ -110,17 +110,18 @@
                     </ul>
                 </div>
                 <!-- copertine -->
-                <h3 id="recently-text">Recently played</h3>
+                <h2 id="recently-text">Recently played</h2>
                 <section id="cover-container" class="d-flex">
-                    <div class="cover-album">
-                        <h3>heavy metal</h3>
+                    <div class="cover-album-generic test-bord">
+                        <div class="cover"><img class="cover-album" src="img/metal_lifting.jpg" alt=""></div>
+                        <h4 class="pt-pb">heavy metal</h4>
+                        <p class="color-grey pt-pb">subtitle</p>
                     </div>
-                    <div class="cover-album"></div>
-                    <div class="cover-album"></div>
-                    <div class="cover-album"></div>
-                    <div class="cover-album"></div>
-                    <div class="cover-album"></div>
-
+                    <div class="cover-album-generic test-bord">
+                        <div class="cover"><img class="cover-album" src="img/stranger.jpeg" alt=""></div>
+                        <h4 class="pt-pb">stranger thing, vol.1(a netflix original series soundtrack)</h4>
+                        <p class="color-grey pt-pb">kyle dixon & michael stein</p>
+                    </div>
                 </section>
             </section>
         </main>
