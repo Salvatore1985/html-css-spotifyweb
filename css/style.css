@@ -131,12 +131,47 @@
         text-decoration: underline;
     }
     
+
+    .active-play:hover .point {
+        visibility: visible;
+      }
+
+      div:hover .active-play{
+        background-color: #adff2f;
+      }     
     #button-upgrate:hover {
     transform: scale(1.2);
     
     }
     
     /**---------- FINE HOVER ---------------- */
+    .point{
+      visibility: hidden;
+        content: " ";
+        position: absolute;
+        right: 0;
+        bottom: -2.75px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #adff2f;
+       
+      }
+
+
+    .active::after {
+        content: " ";
+          display: block;
+          width: 30%;
+          height: 2px;
+         background-color: #adff2f;
+         margin: auto ;
+      }
+        
+      
+
+
+
     .container{
         min-width: 200px;
         background-color: black;
@@ -237,15 +272,6 @@
     margin: auto 50px;
 }
    
-.active::after {
-  content: " ";
-    display: block;
-    width: 30%;
-    height: 2px;
-   background-color: #adff2f;
-   margin: auto ;
-}
-  
 
 
 #icon-app{
@@ -350,20 +376,23 @@ div img {
     height: 50px;
 }
 
-/* .footer-left{
-
-width: 25%;
-
+.footer-left{
+    min-width: 10%;
 }
-*/
+
 .footer-center{
   width: 50%;
    
 } 
 
 .footer-right{
-    width: 20%;
+    min-width: 20%;
 }
+.active-play{
+    position: relative;
+
+}
+
 .loading-bar{
     height: 4px;
     width:60%;
@@ -382,6 +411,7 @@ width: 25%;
     padding: .5rem;
 }
 footer {
+    padding: .5rem;
     height: 70px;
     background-color: #333;
     position: absolute;
