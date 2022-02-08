@@ -6,7 +6,7 @@
 }
 
 
-/***utily***/
+/*** -----utily----- ***/
 /* .test-bord{
     border: 1px solid white;
 }
@@ -48,14 +48,14 @@
 }
 .justify-content{
     justify-content: space-between;
-
+    
 }
 .justify-content-center{
     justify-content: center;
 }
 .justify-align-center{
     align-items: center;
-
+    
 }
 .justify-content-around{
     justify-content: space-around;
@@ -67,70 +67,88 @@
     text-transform: uppercase;
   }
   .text-capitalize {
-    text-transform: capitalize;
-  }
-.pd-text{
-    padding: 0 1.5rem;
-}
-  .pl-20px{
-      padding-left: 20px;
-  }
-  .pl-10px{
-    padding-left: 10px;
-}
-.pl-8px{
-    padding-left: 8px;
-}
-  .p-top-20px{
-    padding-top: 20px;
-}
-.pt-pb{
-    padding: 0.3rem 0;
-}
-.mb-rem{
-    margin-bottom: 1em;
-}
-.mt-rem{
-    margin-top: 0.5rem;
-}
-.ml-10px{
-    margin-left: 10px;
-}
-.list-style-type{
-    list-style-type: none;
-}
-
-
-  .d-inline-block{
-      display: inline;
+      text-transform: capitalize;
+    }
+    .pd-text{
+        padding: 0 1.5rem;
+    }
+    .pl-20px{
+        padding-left: 20px;
+    }
+    .pl-10px{
+        padding-left: 10px;
+    }
+    .pl-8px{
+        padding-left: 8px;
+    }
+    .p-top-20px{
+        padding-top: 20px;
+    }
+    .pt-pb{
+        padding: 0.3rem 0;
+    }
+    .mb-rem{
+        margin-bottom: 1em;
+    }
+    .mt-rem{
+        margin-top: 0.5rem;
+    }
+    .ml-10px{
+        margin-left: 10px;
+    }
+    .list-style-type{
+        list-style-type: none;
+    }
+    
+    
+    .d-inline-block{
+        display: inline;
     }
     .text-decoration{
         text-decoration: none;
-}  
-
-    /******Fine utily ********/
-  
- .container{
-       min-width: 200px;
+    }  
+    
+    /**---- Fine utily ----**/
+    
+    /**---------- HOVER ---------------- */
+    /* .cover-album:hover{
+       
+    } */
+    
+    a:hover{
+        color: white;
+    }
+    #name-piece:hover{
+        text-decoration: underline;
+    }
+    
+    #button-upgrate:hover {
+    transform: scale(1.2);
+    
+    }
+    
+    /**---------- FINE HOVER ---------------- */
+    .container{
+        min-width: 200px;
         background-color: black;
         height: calc(100vh - 70px);
-     
-}
-main{
-    flex-grow: 1;
-    background-color: #141922;  
-    height: calc(100vh - 70px);
-    overflow: auto;
-
+        
+    }
+    main{
+        flex-grow: 1;
+        background-color: #141922;  
+        height: calc(100vh - 70px);
+        overflow: auto;
+        
 }
 .top-bar-main{
     height: 70px;
     background-color:rgba(0, 0, 0, 0.5);
-    
-}
-#button-upgrate:hover {
-transform: scale(1.2);
-
+    top: 0;
+    position: absolute;
+    left: 200px;
+    right: 0;
+    z-index: 1;
 }
 
 .upgrate{
@@ -159,6 +177,7 @@ transform: scale(1.2);
 #library ul{
     font-size: 0.8rem;
 }
+
 #library ul li{
     padding: .3rem 20px;
 }
@@ -177,7 +196,9 @@ transform: scale(1.2);
     font-size: 1rem;
 }
 
-
+ #page{
+    margin-top: 70px;
+}
 #playlist ul li {
     list-style-type: none;
    padding: 0.4rem 0;
@@ -205,9 +226,6 @@ transform: scale(1.2);
    margin: auto ;
 }
   
- a:hover{
-    color: white;
-}
 
 
 #icon-app{
@@ -293,7 +311,7 @@ footer {
 
 .cover-container{
     padding: 1.5rem;
-  /*   border: 1px solid white; */
+  
 }
 .cover-album-generic{
     width: calc(100% / 6);
@@ -333,9 +351,7 @@ width: 15%;
     border: 1px solid white;
     width:50%;
 }
-#name-piece:hover{
-    text-decoration: underline;
-}
+
 
 @media screen and (min-width :576px) and (max-width :768px) {
     #playlist  {
