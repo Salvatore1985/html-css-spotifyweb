@@ -165,12 +165,17 @@
 }
 .position-logo{
     height: 70px;
+    width: 150px;
+    
    
 }
 #logo {
+    width: 150px;
     margin-left: 20px;
-    width: 70%;
-   
+    background-image: url("../img/logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70px;
 }
 
 
@@ -353,10 +358,14 @@ width: 15%;
 }
 
 
-@media screen and (min-width :576px) and (max-width :768px) {
+/* @media screen and (min-width :576px) and (max-width :768px) {
+    #logo {
+       background-image: url("../img/logo-small.svg");
+    }
+   
     #playlist  {
         overflow: auto;
      min-height: 200px;
     }
     
-  }
+  } */
