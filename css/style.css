@@ -10,8 +10,8 @@
 /* .test-bord{
     border: 1px solid white;
 }
- */
 
+ */
  
  
  .text-decoration{
@@ -39,9 +39,7 @@
 .d-flex{
     display:flex;
 }
-.d-gap-10x{
-    gap: 1%;
-}
+
 .d-flex-column{
     flex-direction: column;
 }
@@ -227,6 +225,12 @@
     margin-top: 1rem;
     padding: .8rem;
     font-size: .7rem;
+    
+}
+
+#page ul  {
+   
+    margin: auto 50px;
 }
    
 .active::after {
@@ -280,32 +284,13 @@ color: #A3A3A3;
     vertical-align: middle;
 }
 
-#icon-author{
-    height: 40px;
-}
-
 .fa-arrow-circle-down{
     font-size: 0.8rem;
 } 
-footer {
-    height: 70px;
-    background-color: #333;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    
-  }
 
   
-  #sinister-small-cover{
-    height:2.5rem;
-   
-}
-#icons-controls{
-    width: 50%;
-}
+
+
 #name-piece{
     font-size: 0.7rem;
 }
@@ -313,7 +298,7 @@ footer {
     font-size: 1.5rem;
 }
 #icons-time{
-    width:80%;
+    width:100%;
 }
 #playlist{
     overflow: auto;
@@ -327,7 +312,7 @@ footer {
 }
 .cover-album-generic{
     width: calc(100% / 6);
-    
+    padding: .5rem;
 }
 
 
@@ -353,16 +338,49 @@ div img {
     font-size: .8rem;
 }
 
+#sinister-small-cover{
+    background-image: url(../img/sinister.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+}
+
 .footer-left{
-height: 70px;
-width: 15%;
+
+width: 25%;
 
 }
 .footer-center{
-    height: 70px;
-    border: 1px solid white;
-    width:50%;
+  width: 40%;
+   
 }
+.loading-bar{
+    height: 4px;
+    width: 60%;
+    background: #5a5a5a;
+    border-radius: 5px;
+}
+.loading-bar >div{
+    height: 4px;
+    width: 20%;
+    background: #c1c1c1;
+    border-radius: 5px;
+}
+
+#icons-controls a{
+    padding: .5rem;
+}
+footer {
+    height: 70px;
+    background-color: #333;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    
+  }
 
 
 @media screen and (max-width :576px)  {
@@ -409,5 +427,23 @@ width: 15%;
      overflow: auto;
      min-height: 200px;
     }
-    
+    .cover-album-generic{
+        width: calc(100% / 2);
+        
+    }
+    .top-bar-main {
+        left: 50px;
+    }
+
+    #heart-folder{
+        flex-direction: column;
+      justify-content: center;
+        
+    }
+    .footer-left{
+
+        width: 20%;
+        
+        }
+
   }
