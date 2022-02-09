@@ -155,6 +155,10 @@
 .cover{
     position: relative;
 }
+
+.border-radius-cover {
+    border-radius: 50%;
+}
     .play-circle{
         visibility: hidden;
         width: 100%;
@@ -164,6 +168,8 @@
         top: 0;
 
     }
+
+
 div.play-circle i{
     font-size: 7vh;
 }
