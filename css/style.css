@@ -4,8 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
+/* body{
+    font-family:;
+}
+ */
 /*** -----utily----- ***/
 /* .test-bord{
     border: 1px solid white;
@@ -120,8 +122,9 @@
     /**---- Fine utily ----**/
     
     /**---------- HOVER ---------------- */
-    /* .cover-album:hover{
-       
+   /*  .cover-album{
+            content: "far fa-play-circle ";
+
     } */
     
     a:hover,
@@ -147,6 +150,8 @@
     
     }
     
+   
+
     /**---------- FINE HOVER ---------------- */
     .point{
       visibility: hidden;
@@ -161,6 +166,7 @@
        
       }
 
+    
 
     .active::after {
         content: " ";
@@ -181,7 +187,8 @@
         flex-grow: 1;
         background-color: #141922;  
         height: calc(100vh - 70px);
-        overflow: auto;
+        overflow-y: auto;
+        overflow-x: hidden;
         
     }
     .top-bar-main{
@@ -260,10 +267,10 @@
 }
 #page ul li {
     list-style-type: none;
-    /* margin-top: 1rem; */
+  
     padding: .8rem;
     font-size: .7rem;
-    /* width: calc(100vh / 6); */
+  
 }
 
 #page ul  {
@@ -340,8 +347,8 @@ color: #A3A3A3;
     width:100%;
 }
 #playlist{
-    overflow: auto;
     flex-grow: 1;
+    overflow: auto;
     
 }
 
@@ -383,10 +390,12 @@ div img {
     background-size: cover;
     width: 50px;
     height: 50px;
+    
 }
 
+
 .footer-left{
-    min-width: 10%;
+    min-width: 20%;
 }
 
 .footer-center{
@@ -430,7 +439,9 @@ footer {
     z-index: 1;
     
   }
-
+.footer-left >div{
+    width: 60%;
+}
 
 
 
@@ -455,7 +466,6 @@ footer {
    #text-home,
    #text-searche,
    #text-library,
-   #responsive-playlist,
    #instal-app,
    #text-author{
        display: none;
@@ -513,13 +523,10 @@ footer {
 
 
 
-        /** MD */
-        @media screen and (min-width :768px) and (max-width :991px) {
+ /** MD */
+ @media screen and (min-width :768px) and (max-width :991px) {
       
-            .cover-album-generic{
-                width: calc(100% / 4);
-                
-            }
-            
-         
-          }
+ .cover-album-generic{
+ width: calc(100% / 4);
+ }
+ }
